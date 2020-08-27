@@ -1,0 +1,44 @@
+.product-name{
+    font-weight: 400;
+    color: blue;
+    
+}
+.single-product{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    padding: 15px;
+}
+.product-details{
+    margin-left: 20px;
+}
+.add-button{
+    background-color: goldenrod;
+    border: 1px solid rgb(70, 68, 68);
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 150px;
+    padding: 5px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+}
+.add-button:hover{
+    background-color: rgb(172, 128, 17);
+}
+.price{
+    font-size: 18px;
+}
+.feature{
+    font-size: 13px;
+    color: gray;
+}
+.value{
+    font-weight: 500;
+    font-size: 13px;
+}
+.star-feature{
+    position: relative;
+    left: 300px;
+    top: -20px;
+}

@@ -1,0 +1,23 @@
+.order-summery{
+    margin-left: 15px;
+    margin-top: 20px;
+    padding: 5px;
+}
+.order-summery h3{
+    text-align: center;
+    padding: 0 0 20px 50px;
+}
+.order-summery p{
+    font-size: 15px;
+}
+.order-summery h4{
+    margin-bottom: 5px;
+}
+.order-total{
+    color: rgb(206, 41, 41);
+    margin-top: 5px;
+    font-size: 20px;
+}
+.order-summery table{
+    font-size: 14px;
+}
