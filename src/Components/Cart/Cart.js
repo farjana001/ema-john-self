@@ -1,5 +1,6 @@
 import React from 'react';
 import './Cart.css';
+import { Link } from 'react-router-dom';
 
 const Cart = (props) => {
     const cart = props.cart;
@@ -52,7 +53,7 @@ const Cart = (props) => {
                 </tbody>
             </table>
             <h4 className='order-total'>Order Total: ${formatNumber(grandTotal)}</h4>
-            <button className='add-button'>Review your Order</button>
+            <Link to='/review'><button className='add-button'>Review your Order</button></Link>
 
             
         </div>
