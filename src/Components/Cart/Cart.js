@@ -1,12 +1,10 @@
 import React from 'react';
 import './Cart.css';
-import { Link } from 'react-router-dom';
+
 
 const Cart = (props) => {
     const cart = props.cart;
-
-    const total = cart.reduce((total, product) => total + product.price, 0);
-
+    const total = cart.reduce((total, product) => total + product.price * product.quantity, 0);
     let shipping = 0;
     if(total > 100){
         shipping = 0;
@@ -53,8 +51,10 @@ const Cart = (props) => {
                 </tbody>
             </table>
             <h4 className='order-total'>Order Total: ${formatNumber(grandTotal)}</h4>
-            <Link to='/review'><button className='add-button'>Review your Order</button></Link>
-
+            
+            {
+                props.children
+            }
             
         </div>
     );
